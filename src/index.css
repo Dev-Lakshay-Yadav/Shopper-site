@@ -1,0 +1,476 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    @apply m-0
+}
+
+body{
+    @apply 
+    m-0
+    font-[poppins]
+}
+
+/* NavBar */
+
+.navbar {
+    @apply 
+    flex 
+    justify-around 
+    p-[16px]
+}
+
+.nav-logo {
+    @apply 
+    flex 
+    items-center 
+    gap-[10px]
+}
+.nav-logo p {
+    @apply 
+    text-[#171717] 
+    text-[38px]
+    font-[600]
+}
+
+.nav-menu {
+    @apply 
+    flex 
+    items-center 
+    list-none 
+    gap-[50px]
+    text-[#626262] 
+    text-[20px]
+    font-[500]
+}
+.nav-menu li {
+    @apply 
+    flex 
+    flex-col 
+    items-center 
+    justify-center 
+    gap-[3px]
+    cursor-pointer
+}
+.nav-menu hr {
+    @apply 
+    border-none 
+    w-[80%] 
+    h-[3px]
+    rounded-lg 
+    bg-[#FF4141]
+}
+
+.nav-login-cart {
+    @apply 
+    flex 
+    items-center 
+    gap-[45px]
+}
+.nav-login-cart button{
+    @apply 
+    w-[157px]
+    h-[58px] 
+    outline-none 
+    border-solid 
+    border-[1px] 
+    border-[#7a7a7a] 
+    rounded-[75px] 
+    text-[#515151] 
+    text-[20px]
+    font-[500] 
+    bg-white 
+    cursor-pointer  
+    active:bg-[#f3f3f3]
+}
+.nav-cart-count {
+    @apply 
+    w-[22px]
+    h-[22px] 
+    flex 
+    justify-center 
+    items-center 
+    mt-[-35px] 
+    ml-[-50px] 
+    rounded-[11px] 
+    text-[14px] 
+    bg-red-600
+    text-white
+}
+
+
+/* Hero Section */
+
+.hero{
+    @apply 
+    h-[100vh]
+    bg-gradient-to-b from-[#fde1ff] to-[#e1ffea22]
+    flex
+}
+
+.hero-left{
+    @apply 
+    flex-1 
+    flex 
+    flex-col 
+    justify-center
+    gap-[20px] 
+    pl-[180px]
+    leading-[1.1]
+}
+.hero-left h2{
+    @apply 
+    text-[#090909]
+    text-[26px]
+    font-[600]
+}
+.hero-left p{
+    @apply
+    text-[#171717]
+    text-[100px]
+    font-[700]
+}
+
+.hero-hand-icon{
+    @apply 
+    flex 
+    items-center 
+    gap-[20px] 
+}
+.hero-hand-icon img{
+    @apply 
+    w-[105px]
+}
+.hero-latest-btn{
+    @apply 
+    flex
+    justify-center 
+    items-center 
+    gap-[15px]
+    w-[310px] 
+    h-[70px] 
+    rounded-[75px] 
+    mt-[30px]
+    bg-[#ff4141]
+    text-white
+    text-[22px]
+    font-[500]
+}
+
+.hero-right {
+    @apply 
+    flex-1
+    flex
+    items-center
+    justify-center
+}
+
+
+
+
+/* Items */
+
+.item{
+    @apply
+    w-[350px]
+}
+
+.item p{
+    @apply 
+    my-[6px]
+    mx-[0px]
+}
+
+.item-prices{
+    @apply
+    flex
+    gap-[20px]
+}
+.item-price-new{
+    @apply
+    text-[#374151]
+    text-[18px]
+    font-[600]
+}
+.item-price-old{
+    @apply
+    text-[#8c8c8c]
+    text-[18px]
+    font-[500]
+    line-through
+}
+.item:hover{
+    transform: scale(1.05);
+    transition: 0.6 s;
+}
+
+
+
+/* Popular */
+.popular{
+    @apply
+    flex
+    flex-col
+    items-center
+    gap-[10px]
+    h-[90vh]
+}
+
+.popular h1{
+    @apply
+    text-[#171717]
+    text-[50px]
+    font-[600]
+}
+.popular hr{
+    @apply
+    w-[200px]
+    h-[6px]
+    rounded-[10px]
+    bg-[#252525]
+}
+.popular-item{
+    @apply
+    mt-[50px]
+    flex
+    gap-[30px]
+}
+
+
+/* Offers */
+.offers{
+    @apply
+    w-[85%]
+    h-[80vh]
+    flex
+    m-auto
+    p-[140px]
+    mb-[150px]
+    bg-gradient-to-r from-[#fde1ff] to-[#b9b4b422]
+}
+
+.offers-left{
+    @apply
+    flex-1
+    flex
+    flex-col
+    justify-center
+}
+.offers-left h1{
+    @apply
+    text-[#171717]
+    text-[80px]
+    font-[600]
+}
+.offers-left p{
+    @apply
+    text-[#171717]
+    text-[22px]
+    font-[600]
+}
+.offers-left button{
+    @apply
+    w-[282px]
+    h-[70px]
+    rounded-[35px]
+    bg-[#ff4141]
+    border-none
+    text-white
+    text-[22px]
+    font-[500]
+    mt-[30px]
+    cursor-pointer
+}
+
+.offers-right{
+    @apply
+    flex-1
+    flex
+    items-center
+    justify-center
+    pb-[30px]
+}
+.offers-right img{
+    @apply
+    w-[350px]
+    h-[500px]
+}
+
+
+
+
+/* New Collections */
+.newcollections{
+    @apply
+    flex
+    flex-col
+    items-center
+    gap-[10px]
+    mb-[100px]
+}
+
+.newcollections h1{
+    @apply
+    text-[#171717]
+    text-[50px]
+    font-[600]
+}
+.newcollections hr{
+    @apply
+    w-[200px]
+    h-[6px]
+    rounded-[10px]
+    bg-[#252525]
+}
+.collections{
+    @apply
+    grid
+    grid-cols-4
+    mt-[50px]
+    gap-[30px]
+}
+
+
+
+/* News Letter */
+.newsletter{
+    @apply
+    w-[65%]
+    h-[40vh]
+    flex
+    flex-col
+    items-center
+    justify-center
+    m-auto
+    py-0
+    px-[140px]
+    mb-[150px]
+    bg-gradient-to-b from-[#fde1ff] to-[#e1ffea22]
+    gap-[30px]
+}
+
+.newsletter h1{
+    @apply
+    text-[#454545]
+    text-[55px]
+    font-[600]
+}
+
+.newsletter p{
+    @apply
+    text-[#454545]
+    text-[20px]
+}
+
+.newsletter div{
+    @apply
+    flex
+    items-center
+    justify-between
+    bg-white
+    w-[730px]
+    h-[70px]
+    rounded-[80px]
+    border-solid
+    border-[1px]
+    border-[#e3e3e3]
+}
+
+.newsletter input{
+    @apply
+    w-[500px]
+    ml-[30px]
+    border-none
+    outline-none
+    text-[#616161]
+    font-serif
+    text-[16px]
+}
+
+.newsletter div button{
+    @apply
+    w-[210px]
+    h-[70px]
+    rounded-[80px]
+    bg-black
+    text-white
+    text-[16px]
+    cursor-pointer
+}
+
+
+/* Footer */
+.footer{
+    @apply
+    flex
+    flex-col
+    justify-center
+    items-center
+    gap-[50px]
+}
+
+.footer-logo{
+    @apply
+    flex
+    items-center
+    gap-[20px]
+}
+
+.footer-logo p{
+    @apply
+    text-[#383838]
+    text-[46px]
+    font-[700]
+}
+
+.footer-links{
+    @apply
+    flex
+    list-none
+    gap-[50px]
+    text-[#252525]
+    text-[20px]
+}
+
+.footer-links li{
+    @apply
+    cursor-pointer
+}
+
+.footer-social-icon{
+    @apply
+    flex
+    gap-[20px]
+} 
+
+.footer-icons-container{
+    @apply
+    p-[10px]
+    pb-[6px]
+    bg-[#fbfbfb]
+    border-solid
+    border-[1px]
+    border-[#ebebeb]
+}
+
+.footer-copyright{
+    @apply
+    flex
+    flex-col
+    items-center
+    gap-[30px]
+    w-[100%]
+    mb-[30px]
+    text-[#1a1a1a]
+    text-[20px]
+}
+
+.footer-copyright hr{
+    @apply
+    w-[80%]
+    border-none
+    rounded-[10px]
+    h-[3px]
+    bg-[#c7c7c7]
+}
