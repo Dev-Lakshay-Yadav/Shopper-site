@@ -474,3 +474,454 @@ body{
     h-[3px]
     bg-[#c7c7c7]
 }
+
+
+
+/* Shop category */
+.shopcategory-banner{
+    @apply
+    block
+    my-[30px]
+    mx-auto
+    w-[82%]
+}
+
+.shopcategory-indexsort{
+    @apply
+    flex
+    my-0
+    mx-[170px]
+    justify-between
+    items-center
+}
+.shopcategory-sort{
+    @apply
+    py-[10px]
+    px-[20px]
+    rounded-[40px]
+    border-solid
+    border-[1px]
+    border-[#888]
+}
+.shopcategory-indexsort p span{
+    @apply
+    font-[600]
+}
+.shopcategory-products{
+    @apply
+    my-[20px]
+    mx-[170px]
+    grid
+    grid-cols-3
+    gap-y-[80px]
+}
+.shopcategory-loadmore{
+    @apply
+    flex
+    justify-center
+    items-center
+    my-[150px]
+    mx-auto
+    w-[235px]
+    h-[69px]
+    rounded-[75px]
+    bg-[#ededed]
+    text-[#787878]
+    text-[18px]
+    font-[600]
+}
+
+
+/* Login signup */
+.loginsignup{
+    @apply
+    w-full
+    h-[100vh]
+    bg-[#fce3fe]
+    pt-[60px]
+}
+.loginsignup-container{
+    @apply
+    w-[580px]
+    h-[600px]
+    bg-white
+    m-auto
+    py-[40px]
+    px-[60px]
+}
+.loginsignup-container h1{
+    @apply
+    my-[20px]
+    mx-0
+}
+.loginsignup-fields{
+    @apply
+    flex
+    flex-col
+    gap-[25px]
+    mt-[30px]
+}
+.loginsignup-fields input{
+    @apply
+    h-[50px]
+    w-full
+    pl-[15px]
+    border-solid
+    border-[1px]
+    border-[#c9c9c9]
+    outline-none
+    text-[#5c5c5c]
+    text-[18px]
+}
+.loginsignup-container button{
+    @apply
+    w-[460px]
+    h-[45px]
+    text-white
+    bg-[#ff4141]
+    mt-[30px]
+    border-none
+    text-[24px]
+    font-[500]
+    cursor-pointer
+}
+.loginsignup-login{
+    @apply
+    mt-[20px]
+    text-[#5c5c5c]
+    text-[18px]
+    font-[500]
+}
+.loginsignup-login span{
+    @apply
+    text-[#ff4141]
+    font-[600]
+}
+.loginsignup-agree{
+    @apply
+    flex
+    items-center
+    mt-[25px]
+    gap-[20px]
+    text-[#5c5c5c]
+    text-[18px]
+    font-[500]
+}
+
+/* Breadcrum */
+.breadcrum{
+    @apply  
+    flex 
+    items-center
+    gap-[8px]
+    text-[#5e5e5e]
+    text-[16px]
+    font-[600]
+    my-[60px]
+    mx-[170px]
+    capitalize
+}
+
+
+/* Product Display */
+
+.productdisplay{
+    @apply
+    flex
+    my-0
+    mx-[170px]
+}
+.productdisplay-left{
+    @apply
+    flex
+    gap-[17px]
+}
+.productdisplay-img-list{
+    @apply
+    flex
+    flex-col
+    gap-[16px]
+
+}
+.productdisplay-img-list img{
+    @apply
+    h-[163px]
+}
+.productdisplay-main-img{
+    @apply
+    w-[586px]
+    h-[700px]
+}
+.productdisplay-right{
+    @apply
+    my-0
+    mx-[70px]
+    flex
+    flex-col
+}
+.productdisplay-right h1{
+    @apply
+    text-[#3d3d3d]
+    text-[40px]
+    font-[700]
+}
+.productdisplay-right-stars{
+    @apply
+    flex
+    items-center
+    mt-[13px]
+    gap-[5px]
+    text-[#1c1c1c]
+    text-[16px]
+}
+.productdisplay-right-prices{
+    @apply
+    flex
+    my-[40px]
+    mx-0
+    gap-[30px]
+    text-[24px]
+    font-[700]
+}
+.productdisplay-right-price-old{
+    @apply
+    text-[#818181]
+    line-through
+}
+.productdisplay-right-price-new{
+    @apply
+    text-[#ff4141]
+}
+.productdisplay-right-size h1{
+    @apply
+    mt-[55px]
+    text-[#656565]
+    text-[20px]
+    font-[600]
+}
+.productdisplay-right-sizes{
+    @apply
+    flex
+    my-[30px]
+    mx-0
+    gap-[20px]
+}
+.productdisplay-right-sizes div{
+    @apply
+    py-[18px]
+    px-[24px]
+    bg-[#fbfbfb]
+    border-solid
+    border-[1px]
+    border-[#ebebeb]
+    rounded-[3px]
+    cursor-pointer
+}
+.productdisplay-right button{
+    @apply
+    py-[20px]
+    px-[40px]
+    w-[200px]
+    text-[16px]
+    font-[600]
+    text-white
+    bg-[#ff4141]
+    mb-[40px]
+    border-none
+    outline-none
+    cursor-pointer
+}
+.productdisplay-right-category{
+    @apply
+    mt-[10px]
+}
+.productdisplay-right-category span{
+    @apply
+    font-[600]
+}
+
+/* Description Box */
+.descriptionbox{
+    @apply
+    my-[120px]
+    mx-[170px]
+}
+.descriptionbox-navigator{
+    @apply
+    flex
+}
+.descriptionbox-nav-box{
+    @apply
+    flex
+    items-center 
+    justify-center
+    text-[16px]
+    font-[600]
+    w-[171px]
+    h-[70px]
+    border-solid
+    border-[1px]
+    border-[#d0d0d0]
+}
+.descriptionbox-nav-box.fade{
+    @apply
+    bg-[#fbfbfb]
+    text-[#555]
+}
+.descriptionbox-description{
+    @apply
+    flex
+    flex-col
+    gap-[25px]
+    border-solid
+    border-[1px]
+    border-[#d0d0d0]
+    p-[48px]
+    pb-[70px]
+}
+
+/* Related Products */
+.relatedproducts{
+    @apply
+    flex
+    flex-col
+    items-center
+    gap-[10px]
+    h-[90vh]
+}
+.relatedproducts h1{
+    @apply
+    text-[#171717]
+    text-[50px]
+    font-[600]
+}
+.relatedproducts hr{
+    @apply
+    w-[200px]
+    h-[6px]
+    rounded-[10px]
+    bg-[#252525]
+}
+.relatedproducts-item{
+    @apply
+    mt-[50px]
+    flex
+    gap-[30px]
+}
+
+/* Cart Items */
+.cartitems{
+    @apply
+    my-[100px]
+    mx-[170px]
+}
+.cartitems hr{
+    @apply
+    h-[3px]
+    bg-[#e2e2e2]
+    border-0
+}
+.cartitem-format-main{
+    @apply
+    items-center
+    gap-[75px]
+    py-[20px]
+    px-0
+    text-[#454545]
+    text-[18px]
+    font-[600]
+}
+.cartitem-format{
+    @apply
+    text-[17px]
+    font-[500]
+}
+.carticon-product-icon{
+    @apply
+    h-[62px]
+}
+.cartitems-remove-icon{
+    @apply
+    w-[15px]
+    my-0
+    mx-[40px]
+    cursor-pointer
+}
+.cartitems-quantity {
+    @apply
+    w-[64px]
+    h-[50px]
+    border-solid
+    border-[2px]
+    border-[#ebebeb]
+    bg-white
+}
+.cartitems-down{
+    @apply
+    flex
+    my-[100px]
+    mx-0
+}
+.cartitems-total{
+    @apply
+    flex-1
+    flex
+    flex-col
+    mr-[200px]
+    gap-[40px]
+}
+.cartitems-total-item{
+    @apply
+    flex
+    justify-between
+    py-[15px]
+    px-0
+}
+.cartitems-total button{
+    @apply
+    w-[262px]
+    h-[58px]
+    border-none
+    outline-none
+    bg-[#ff5a5a]
+    text-white
+    text-[16px]
+    font-[600]
+    cursor-pointer
+}
+.cartitems-promocode{
+    @apply
+    flex-1
+    text-[16px]
+    font-[500]
+}
+.cartitems-promocode p{
+    @apply
+    text-[#555]
+}
+.cartitems-promobox{
+    @apply
+    w-[504px]
+    mt-[15px]
+    pl-[20px]
+    h-[58px]
+    bg-[#eaeaea]
+}
+.cartitems-promobox input{
+    @apply
+    border-none
+    outline-none
+    bg-transparent
+    text-[16px]
+    w-[330px]
+    h-[50px]
+}
+.cartitems-promobox button{
+    @apply
+    w-[170px]
+    h-[58px]
+    text-[16px]
+    bg-black
+    text-white
+    cursor-pointer
+}
